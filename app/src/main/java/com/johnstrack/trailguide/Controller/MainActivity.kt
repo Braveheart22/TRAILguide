@@ -1,8 +1,10 @@
 package com.johnstrack.trailguide.Controller
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
+import android.view.View
 import com.johnstrack.trailguide.Adapter.CategoryRecycleAdapter
 import com.johnstrack.trailguide.R
 import com.johnstrack.trailguide.Services.DataService
@@ -24,5 +26,10 @@ class MainActivity : AppCompatActivity() {
         val layoutManager = LinearLayoutManager (this)
         categoryListView.layoutManager = layoutManager
         categoryListView.setHasFixedSize(true)
+    }
+
+    fun hamburgerMenuClicked (view: View) {
+        val intent = Intent (this, AppInfoActivity::class.java)
+        startActivity(intent)
     }
 }

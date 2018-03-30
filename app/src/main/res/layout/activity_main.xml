@@ -31,4 +31,20 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/hamburgerBtn"
+        android:layout_width="19dp"
+        android:layout_height="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="@string/hamburger_button"
+        android:onClick="hamburgerMenuClicked"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/categoryListView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hamburger" />
 </android.support.constraint.ConstraintLayout>
