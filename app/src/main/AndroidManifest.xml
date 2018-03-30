@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Controller.CategoryItemsActivity" />
         <activity android:name=".Controller.DetailActivity" />
-        <activity android:name=".Controller.AppInfoActivity"></activity>
+        <activity android:name=".Controller.AppInfoActivity"
+                    android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

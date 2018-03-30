@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/categoryImage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:contentDescription="@string/category_background"
@@ -18,16 +18,16 @@
         app:srcCompat="@drawable/camping" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/categoryText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/white"
         android:textSize="42sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryImage"
+        app:layout_constraintEnd_toStartOf="@+id/categoryImage"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/categoryImage"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="CATEGORY" />
 </android.support.constraint.ConstraintLayout>

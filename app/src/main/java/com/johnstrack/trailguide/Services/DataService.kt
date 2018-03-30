@@ -8,8 +8,8 @@ import com.johnstrack.trailguide.Model.Category
 object DataService {
     val categories = listOf(
             Category("HIKING", "hiking"),
-            Category("CAMPING", "camping"),
             Category("DIVING", "diving"),
+            Category("CAMPING", "camping"),
             Category("SURFING", "surfing"),
             Category("FISHING", "fishing")
     )
