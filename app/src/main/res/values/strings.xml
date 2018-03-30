@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TRAILguide</string>
+    <string name="category_background">category background</string>
 </resources>
