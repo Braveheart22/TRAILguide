@@ -2,6 +2,7 @@ package com.johnstrack.trailguide.Controller
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.view.View
 import com.johnstrack.trailguide.R
 
 class AppInfoActivity : AppCompatActivity() {
@@ -11,7 +12,7 @@ class AppInfoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_app_info)
     }
 
-    fun backToAppClicked () {
+    fun backToAppClicked (view: View) {
         finish()
     }
 }
