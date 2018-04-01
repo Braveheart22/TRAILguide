@@ -10,4 +10,8 @@ class AppInfoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_app_info)
     }
+
+    fun backToAppClicked () {
+        finish()
+    }
 }

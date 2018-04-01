@@ -119,6 +119,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:onClick="backToAppClicked"
         android:paddingEnd="40dp"
         android:paddingStart="40dp"
         android:text="@string/back_to_the_app"
