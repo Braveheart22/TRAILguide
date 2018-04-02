@@ -8,6 +8,7 @@ import android.view.View
 import com.johnstrack.trailguide.Adapter.CategoryRecycleAdapter
 import com.johnstrack.trailguide.R
 import com.johnstrack.trailguide.Services.DataService
+import com.johnstrack.trailguide.Utilities.EXTRA_CATEGORY
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         adapter = CategoryRecycleAdapter(this, DataService.categories) {category ->
 //            println(category.title)
             val itemIntent = Intent (this, CategoryItemsActivity::class.java)
+            itemIntent.putExtra(EXTRA_CATEGORY, category.title)
             startActivity(itemIntent)
         }
         categoryListView.adapter = adapter

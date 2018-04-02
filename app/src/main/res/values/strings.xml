@@ -11,4 +11,5 @@
     <string name="devslopes_logo">Devslopes logo</string>
     <string name="hamburger_button">hamburger button</string>
     <string name="item">CATEGORY GEAR</string>
+    <string name="item_image">item image</string>
 </resources>
