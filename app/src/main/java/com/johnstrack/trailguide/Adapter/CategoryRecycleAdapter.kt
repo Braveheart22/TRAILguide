@@ -28,7 +28,7 @@ class CategoryRecycleAdapter(private val context: Context, private val categorie
     }
 
     inner class Holder(itemView: View?, private val itemClick: (Category) -> Unit) : RecyclerView.ViewHolder(itemView) {
-        val categoryImage = itemView?.findViewById<ImageView>(R.id.categoryImage)
+        private val categoryImage = itemView?.findViewById<ImageView>(R.id.categoryImage)
         private val categoryName = itemView?.findViewById<TextView>(R.id.categoryText)
 
         fun bindCategory (category: Category, context: Context) {
