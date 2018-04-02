@@ -6,7 +6,7 @@
     android:background="@color/colorPrimary">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/itemImage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
