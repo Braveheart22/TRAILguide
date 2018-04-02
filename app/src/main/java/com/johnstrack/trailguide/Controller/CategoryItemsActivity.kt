@@ -20,7 +20,9 @@ class CategoryItemsActivity : AppCompatActivity() {
         val categoryType = intent.getStringExtra(EXTRA_CATEGORY)
         itemText.text = "$categoryType GEAR"
 
-        adapter = ItemAdapter(this, DataService.getItems(categoryType))
+        adapter = ItemAdapter(this, DataService.getItems(categoryType)) {item ->
+            println(item.title)
+        }
         val layoutManager = GridLayoutManager (this, 2)
         itemListView.layoutManager = layoutManager
         itemListView.adapter = adapter

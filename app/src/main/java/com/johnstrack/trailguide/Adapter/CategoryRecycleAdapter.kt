@@ -13,10 +13,10 @@ import com.johnstrack.trailguide.R
 /***
  * Created by John on 3/29/2018.
  */
-class CategoryRecycleAdapter(private val context: Context, private val categories: List<Category>, val itemClick: (Category) -> Unit): RecyclerView.Adapter<CategoryRecycleAdapter.Holder> () {
+class CategoryRecycleAdapter(private val context: Context, private val categories: List<Category>, private val itemClick: (Category) -> Unit): RecyclerView.Adapter<CategoryRecycleAdapter.Holder> () {
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): Holder {
         val view = LayoutInflater.from(parent?.context).inflate(R.layout.category_list_item, parent, false)
-        return Holder(view, itemClick)
+        return Holder(view, this.itemClick)
     }
 
     override fun getItemCount(): Int {
@@ -27,9 +27,9 @@ class CategoryRecycleAdapter(private val context: Context, private val categorie
         holder?.bindCategory(categories[position], context)
     }
 
-    inner class Holder(itemView: View?, val itemClick: (Category) -> Unit) : RecyclerView.ViewHolder(itemView) {
+    inner class Holder(itemView: View?, private val itemClick: (Category) -> Unit) : RecyclerView.ViewHolder(itemView) {
         val categoryImage = itemView?.findViewById<ImageView>(R.id.categoryImage)
-        val categoryName = itemView?.findViewById<TextView>(R.id.categoryText)
+        private val categoryName = itemView?.findViewById<TextView>(R.id.categoryText)
 
         fun bindCategory (category: Category, context: Context) {
             val resourceId = context.resources.getIdentifier(category.image, "drawable", context.packageName)

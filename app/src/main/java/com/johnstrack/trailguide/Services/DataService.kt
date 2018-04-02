@@ -25,13 +25,16 @@ object DataService {
             Item("TENT", "tent"),
             Item("MAP", "map"),
             Item("ROPE", "rope"),
-            Item("GRILL", "grill"),
             Item("COMPASS", "compass"),
             Item("BACKPACK", "backpack"),
             Item("BOOTS", "boots")
     )
     val diving = listOf(
-            Item("ROPE", "rope")
+            Item("OXYGEN", "ox"),
+            Item("FLIPPERS", "ox_flippers"),
+            Item("OXYGEN MASK", "ox_mask"),
+            Item("MASK", "mask"),
+            Item("KNIFE", "knife")
     )
     val camping = listOf(
             Item("TOOLS", "tools"),
@@ -44,10 +47,13 @@ object DataService {
             Item("BOOTS", "boots")
     )
     val surfing = listOf(
-            Item("ROPE", "rope")
+            Item("SURFBOARD", "surfboard")
     )
     val fishing = listOf(
-            Item("ROPE", "rope")
+            Item("FISHING ROD", "fishing_rod"),
+            Item("HOOK", "hook"),
+            Item("LURE", "lure"),
+            Item("KNIFE", "knife")
     )
 
     fun getItems (category: String) : List<Item> {
