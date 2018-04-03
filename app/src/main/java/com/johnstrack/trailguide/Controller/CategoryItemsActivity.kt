@@ -1,6 +1,7 @@
 package com.johnstrack.trailguide.Controller
 
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
@@ -27,7 +28,14 @@ class CategoryItemsActivity : AppCompatActivity() {
             itemIntent.putExtra(EXTRA_ITEM, item)
             startActivity(itemIntent)
         }
-        val layoutManager = GridLayoutManager (this, 2)
+
+        var spanCount = 2
+        val orientation = resources.configuration.orientation
+
+        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            spanCount = 3
+        }
+        val layoutManager = GridLayoutManager (this, spanCount)
         itemListView.layoutManager = layoutManager
         itemListView.adapter = adapter
     }
