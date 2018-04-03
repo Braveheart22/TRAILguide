@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.activity_category_items.*
 
 class CategoryItemsActivity : AppCompatActivity() {
 
-    lateinit var adapter: ItemAdapter
+    private lateinit var adapter: ItemAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
