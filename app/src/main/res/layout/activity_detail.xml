@@ -60,7 +60,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/item_text"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="36sp"
@@ -68,5 +67,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/itemDetailImage" />
+        app:layout_constraintTop_toBottomOf="@+id/itemDetailImage"
+        tools:text="Item" />
 </android.support.constraint.ConstraintLayout>

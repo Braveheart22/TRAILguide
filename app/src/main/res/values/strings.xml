@@ -10,9 +10,7 @@
     <string name="back_to_the_app">Back to the App</string>
     <string name="devslopes_logo">Devslopes logo</string>
     <string name="hamburger_button">hamburger button</string>
-    <string name="item">CATEGORY GEAR</string>
     <string name="item_image">item image</string>
     <string name="see_on_amazon">See on Amazon</string>
     <string name="item_detail_string_item_image">Item detail @string/item_image</string>
-    <string name="item_text">Item</string>
 </resources>
