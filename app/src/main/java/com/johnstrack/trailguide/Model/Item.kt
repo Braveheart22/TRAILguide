@@ -6,14 +6,16 @@ import android.os.Parcelable
 /***
  * Created by John on 4/2/2018 at 3:00 PM.
  */
-class Item (val title: String, val image: String) : Parcelable {
+class Item (val title: String, val image: String, val description: String) : Parcelable {
     constructor(parcel: Parcel) : this(
+            parcel.readString(),
             parcel.readString(),
             parcel.readString())
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(title)
         parcel.writeString(image)
+        parcel.writeString(description)
     }
 
     override fun describeContents(): Int {

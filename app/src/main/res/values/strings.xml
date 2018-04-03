@@ -14,4 +14,5 @@
     <string name="item_image">item image</string>
     <string name="see_on_amazon">See on Amazon</string>
     <string name="item_detail_string_item_image">Item detail @string/item_image</string>
+    <string name="item_text">Item</string>
 </resources>

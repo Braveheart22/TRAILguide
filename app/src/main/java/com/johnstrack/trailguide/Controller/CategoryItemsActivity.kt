@@ -20,10 +20,9 @@ class CategoryItemsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_category_items)
 
         val categoryType = intent.getStringExtra(EXTRA_CATEGORY)
-        itemText.text = "$categoryType GEAR"
+        specificItemText.text = "$categoryType GEAR"
 
-        adapter = ItemAdapter(this, DataService.getItems(categoryType)) {item ->
-            println("${item.title} is here...")
+        this.adapter = ItemAdapter(this, DataService.getItems(categoryType)) { item ->
             val itemIntent = Intent (this, DetailActivity::class.java)
             itemIntent.putExtra(EXTRA_ITEM, item)
             startActivity(itemIntent)
