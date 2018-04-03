@@ -6,8 +6,9 @@ import android.os.Parcelable
 /***
  * Created by John on 4/2/2018 at 3:00 PM.
  */
-class Item (val title: String, val image: String, val description: String) : Parcelable {
+class Item (val title: String, val image: String, val description: String, val amazonUrl: String) : Parcelable {
     constructor(parcel: Parcel) : this(
+            parcel.readString(),
             parcel.readString(),
             parcel.readString(),
             parcel.readString())
@@ -16,6 +17,7 @@ class Item (val title: String, val image: String, val description: String) : Par
         parcel.writeString(title)
         parcel.writeString(image)
         parcel.writeString(description)
+        parcel.writeString(amazonUrl)
     }
 
     override fun describeContents(): Int {
