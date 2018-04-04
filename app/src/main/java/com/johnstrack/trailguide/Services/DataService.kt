@@ -25,8 +25,8 @@ object DataService {
                     "No longer do you have to use different tools for different tasks, but instead you can use one tool and just swap out the accessories.\n\nWe recommend the Gerber multitool.",
                     "https://smile.amazon.com/Gerber-22-01471-Suspension-Multi-Plier/dp/B000EDPT9K/ref=zg_bs_553990_3?_encoding=UTF8&psc=1&refRID=QXYEH6SCRCJGDGBMWF2C"),
             Item("TENT", "tent",
-                    "Tents are an absolute necessity for camping. They provide shelter and warmth. There are many different types of tents with varying sizes and purposes.\n\nWe recommend the Coleman WeatherMaster Tent.",
-                    "https://www.amazon.com/gp/aw/d/B001RPIOMI/ref=mp_s_a_1_2?ie=UTF8&qid=1522768847&sr=8-2&pi=AC_SX236_SY340_FMwebp_QL65&keywords=coleman+weathermaster&dpPl=1&dpID=41ZpUyNf66L&ref=plSrch"),
+                "Tents are an absolute necessity for camping. They provide shelter and warmth. There are many different types of tents with varying sizes and purposes.\n\nWe recommend the Coleman WeatherMaster Tent.",
+                "https://www.amazon.com/gp/aw/d/B001RPIOMI/ref=mp_s_a_1_2?ie=UTF8&qid=1522768847&sr=8-2&pi=AC_SX236_SY340_FMwebp_QL65&keywords=coleman+weathermaster&dpPl=1&dpID=41ZpUyNf66L&ref=plSrch"),
             Item("MAP", "map",
                     "A detailed topo map and a compass are still the primary tools for navigation in the wilderness. A compass helps you orient the map, identify land features and locate your position.\n\nWe recommend Rand McNally. ",
                     "https://www.amazon.com/Folded-Map-United-Rand-McNally/dp/0528881280/ref=zg_bs_11448_13?_encoding=UTF8&psc=1&refRID=S717A30JYVB5B5BR5YD5"),
@@ -60,7 +60,7 @@ object DataService {
                     "Regulators are an expensive purchase. Modern regulators are very reliable. With proper maintenance, a good set of regulators will last your entire diving career.\n\nWe recommend Mares.",
                     "https://smile.amazon.com/Mares-Scuba-Regulator-Octo-Package/dp/B0731W1PP5/ref=zg_bs_719946011_9?_encoding=UTF8&refRID=FQRD5QG5VZ1EG24TTSBR"),
             Item("KNIFE", "knife",
-                    "Many divers want a dive knife, and there are many types of diving knives. . From blunt tip knives and sharp tip knives, to titanium or stainless steel.\n\nWe recommend a Zip diving knife.",
+                    "Many divers want a dive knife, and there are many types of diving knives. From blunt tip knives and sharp tip knives, to titanium or stainless steel.\n\nWe recommend a Zip diving knife.",
                     "https://smile.amazon.com/Zip-Diving-Knife-Snorkeling-Lightweight/dp/B072YWZP75/ref=zg_bs_3406361_2?_encoding=UTF8&refRID=YG2SC2PS3J62Y7AAVV15")
     )
     val camping = listOf(
@@ -96,15 +96,15 @@ object DataService {
             Item("SURFBOARD", "surfboard",
                     "The more often you surf the more choices open up in terms of what board you could ride.\n\nWe recommend StormBlade.",
                     "https://smile.amazon.com/10FT-STORM-BLADE-LONGBOARD-SURFBOARD/dp/B0773XB8XV/ref=zg_bs_3418591_10?_encoding=UTF8&psc=1&refRID=5W0TWAK1E46KSCGQMN22"),
-           Item("WETSUIT", "wetsuit",
-            "A good wetsuit should do its job, first and foremost: protect you from the elements!\n\nWe recommend O'Neil.",
-            "https://smile.amazon.com/ONeill-Wetsuits-Reactor-Black-X-Large/dp/B07BVXFQ9L/ref=sr_1_3?s=sporting-goods&ie=UTF8&qid=1522849806&sr=1-3&keywords=wetsuit&th=1"),
+            Item("WETSUIT", "wetsuit",
+                "A good wetsuit should do its job, first and foremost: protect you from the elements!\n\nWe recommend O'Neil.",
+                "https://smile.amazon.com/ONeill-Wetsuits-Reactor-Black-X-Large/dp/B07BVXFQ9L/ref=sr_1_3?s=sporting-goods&ie=UTF8&qid=1522849806&sr=1-3&keywords=wetsuit&th=1"),
             Item("WAX", "wax",
-            "Unless your surfboard has a traction pad, then you’ll also need some surfboard wax. It adds texture to your surfboard when you apply it where your feet should be.\n\nWe recommend Mr. Zogs.",
-            "https://smile.amazon.com/Mr-Zogs-Original-Sexwax-Temperature/dp/B07BRX7QLR/ref=zg_bs_3418541_4?_encoding=UTF8&refRID=2D81BHMSZJE7Y9KCXAKR"),
+                "Unless your surfboard has a traction pad, then you’ll also need some surfboard wax. It adds texture to your surfboard when you apply it where your feet should be.\n\nWe recommend Mr. Zogs.",
+                "https://smile.amazon.com/Mr-Zogs-Original-Sexwax-Temperature/dp/B07BRX7QLR/ref=zg_bs_3418541_4?_encoding=UTF8&refRID=2D81BHMSZJE7Y9KCXAKR"),
             Item("SUNSCREEN", "sunscreen",
-            "Skin cancer is no joke and you need to do your best to avoid it. But the sun does more than just increase your risk of developing skin cancer, it also speeds up the appearance of wrinkles, causes skin discoloration and various other things.\n\nWe recommend Banana Boat",
-            "https://smile.amazon.com/Banana-Boat-Performance-Lotion-Travel/dp/B0058SXKWE/ref=sr_1_1_sspa?s=beauty&ie=UTF8&qid=1522850153&sr=1-1-spons&keywords=spf+50+sport&psc=1")
+                "Skin cancer is no joke and you need to do your best to avoid it. But the sun does more than just increase your risk of developing skin cancer, it also speeds up the appearance of wrinkles, causes skin discoloration and various other things.\n\nWe recommend Banana Boat",
+                "https://smile.amazon.com/Banana-Boat-Performance-Lotion-Travel/dp/B0058SXKWE/ref=sr_1_1_sspa?s=beauty&ie=UTF8&qid=1522850153&sr=1-1-spons&keywords=spf+50+sport&psc=1")
     )
     val fishing = listOf(
             Item("FISHING ROD", "fishing_rod",
