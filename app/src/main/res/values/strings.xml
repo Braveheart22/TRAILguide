@@ -13,4 +13,6 @@
     <string name="item_image">item image</string>
     <string name="see_on_amazon">See on Amazon</string>
     <string name="item_detail_string_item_image">Item detail @string/item_image</string>
+    <string name="sahua_d">Sahua D</string>
+    <string name="les_vieux_garcons">Les vieux garçons</string>
 </resources>

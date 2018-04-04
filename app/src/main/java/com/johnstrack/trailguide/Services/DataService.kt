@@ -95,7 +95,16 @@ object DataService {
     val surfing = listOf(
             Item("SURFBOARD", "surfboard",
                     "The more often you surf the more choices open up in terms of what board you could ride.\n\nWe recommend StormBlade.",
-                    "https://smile.amazon.com/10FT-STORM-BLADE-LONGBOARD-SURFBOARD/dp/B0773XB8XV/ref=zg_bs_3418591_10?_encoding=UTF8&psc=1&refRID=5W0TWAK1E46KSCGQMN22")
+                    "https://smile.amazon.com/10FT-STORM-BLADE-LONGBOARD-SURFBOARD/dp/B0773XB8XV/ref=zg_bs_3418591_10?_encoding=UTF8&psc=1&refRID=5W0TWAK1E46KSCGQMN22"),
+           Item("WETSUIT", "wetsuit",
+            "A good wetsuit should do its job, first and foremost: protect you from the elements!\n\nWe recommend O'Neil.",
+            "https://smile.amazon.com/ONeill-Wetsuits-Reactor-Black-X-Large/dp/B07BVXFQ9L/ref=sr_1_3?s=sporting-goods&ie=UTF8&qid=1522849806&sr=1-3&keywords=wetsuit&th=1"),
+            Item("WAX", "wax",
+            "Unless your surfboard has a traction pad, then you’ll also need some surfboard wax. It adds texture to your surfboard when you apply it where your feet should be.\n\nWe recommend Mr. Zogs.",
+            "https://smile.amazon.com/Mr-Zogs-Original-Sexwax-Temperature/dp/B07BRX7QLR/ref=zg_bs_3418541_4?_encoding=UTF8&refRID=2D81BHMSZJE7Y9KCXAKR"),
+            Item("SUNSCREEN", "sunscreen",
+            "Skin cancer is no joke and you need to do your best to avoid it. But the sun does more than just increase your risk of developing skin cancer, it also speeds up the appearance of wrinkles, causes skin discoloration and various other things.\n\nWe recommend Banana Boat",
+            "https://smile.amazon.com/Banana-Boat-Performance-Lotion-Travel/dp/B0058SXKWE/ref=sr_1_1_sspa?s=beauty&ie=UTF8&qid=1522850153&sr=1-1-spons&keywords=spf+50+sport&psc=1")
     )
     val fishing = listOf(
             Item("FISHING ROD", "fishing_rod",
