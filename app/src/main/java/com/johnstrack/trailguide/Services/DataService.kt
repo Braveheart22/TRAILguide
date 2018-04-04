@@ -12,11 +12,6 @@ object DataService {
             Category("DIVING", "diving"),
             Category("CAMPING", "camping"),
             Category("SURFING", "surfing"),
-            Category("FISHING", "fishing"),
-            Category("HIKING", "hiking"),
-            Category("DIVING", "diving"),
-            Category("CAMPING", "camping"),
-            Category("SURFING", "surfing"),
             Category("FISHING", "fishing")
     )
 
