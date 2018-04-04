@@ -4,17 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context=".Controller.DetailActivity">
+    android:background="@color/colorPrimary">
 
     <ImageView
         android:id="@+id/itemDetailImage"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="400dp"
         android:background="@android:color/white"
         android:contentDescription="@string/item_detail_string_item_image"
-        android:paddingBottom="16dp"
-        android:paddingTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,12 +22,12 @@
         android:id="@+id/specificItemText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="36sp"
+        android:textSize="100sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -38,35 +35,17 @@
         app:layout_constraintTop_toBottomOf="@+id/itemDetailImage"
         tools:text="Item" />
 
-    <Button
-        android:id="@+id/amazonBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@color/amazonOrange"
-        android:onClick="openAmazonLink"
-        android:paddingEnd="48dp"
-        android:paddingLeft="48dp"
-        android:paddingRight="48dp"
-        android:paddingStart="48dp"
-        android:text="@string/see_on_amazon"
-        android:textColor="@color/amazonText"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
         app:layout_constraintBottom_toTopOf="@+id/amazonBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/specificItemText"
-        app:layout_constraintVertical_bias="0.442">
+        app:layout_constraintTop_toBottomOf="@+id/specificItemText">
 
         <TextView
             android:id="@+id/itemDetailText"
@@ -74,8 +53,28 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
+            android:textSize="50sp"
             tools:text="Item description goes here" />
     </ScrollView>
 
+    <Button
+        android:id="@+id/amazonBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@color/amazonOrange"
+        android:onClick="openAmazonLink"
+        android:paddingBottom="20dp"
+        android:paddingEnd="100dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:paddingStart="100dp"
+        android:paddingTop="20dp"
+        android:text="@string/see_on_amazon"
+        android:textColor="@color/amazonText"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
