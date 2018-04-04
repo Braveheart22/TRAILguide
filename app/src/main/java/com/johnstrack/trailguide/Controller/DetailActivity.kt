@@ -20,7 +20,6 @@ class DetailActivity : AppCompatActivity() {
         val item = intent.getParcelableExtra<Item>(EXTRA_ITEM)
         val context = itemDetailImage.context
         val resourceId = context.resources.getIdentifier(item.image, "drawable", context.packageName)
-        val amazonLink = item.amazonUrl
 
         itemDetailImage.setImageResource(resourceId)
         specificItemText.text = item.title
@@ -28,7 +27,6 @@ class DetailActivity : AppCompatActivity() {
     }
 
     fun openAmazonLink(view: View){
-        println("Open the Amazon item in a browser.")
         val item = intent.getParcelableExtra<Item>(EXTRA_ITEM)
         val uriUrl = Uri.parse(item.amazonUrl)
         val launchBrowser = Intent(Intent.ACTION_VIEW, uriUrl)
