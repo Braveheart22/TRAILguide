@@ -127,7 +127,10 @@ object DataService {
                     ""),
             Item("KNIFE", "knife",
                     "",
-                    "")
+                    ""),
+            Item("SUNSCREEN", "sunscreen",
+                    "Skin cancer is no joke and you need to do your best to avoid it. But the sun does more than just increase your risk of developing skin cancer, it also speeds up the appearance of wrinkles, causes skin discoloration and various other things.\n\nWe recommend Banana Boat",
+                    "https://smile.amazon.com/Banana-Boat-Performance-Lotion-Travel/dp/B0058SXKWE/ref=sr_1_1_sspa?s=beauty&ie=UTF8&qid=1522850153&sr=1-1-spons&keywords=spf+50+sport&psc=1")
     )
 
     fun getItems (category: String) : List<Item> {
