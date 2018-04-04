@@ -45,20 +45,23 @@ object DataService {
     )
     val diving = listOf(
             Item("OXYGEN", "ox",
-                    "",
-                    ""),
+                    "require yearly visual inspections and a hydrostatic test once every five years (dependent upon where you live).\n\nWe recommend Faber Stealth.",
+                    "https://smile.amazon.com/Faber-Stealth-HP117-Steel-Tank/dp/B00KLR9K58/ref=zg_bs_3406981_12?_encoding=UTF8&psc=1&refRID=3NW55RPK4204GKRYZ6AR"),
             Item("FLIPPERS", "ox_flippers",
-                    "",
-                    ""),
+                    "Diving fins come in such a variety of lengths, styles, and stiffnesses that it is necessary to get the right pair for you.\n\nWe recommend U.S. Divers.",
+                    "https://smile.amazon.com/U-S-Divers-Proflex-FX-Fin/dp/B004BJ2S0G/ref=zg_bs_3406751_5?_encoding=UTF8&refRID=YCPNF1ZBGZCB7NQWW732"),
             Item("OXYGEN MASK", "ox_mask",
-                    "",
-                    ""),
+                    "A high-quality, comfortable scuba diving mask that fits your face well can make the difference between enjoyable dives and a miserable time underwater.\n\nWe recommend Orsen.",
+                    "https://smile.amazon.com/ORSEN-180%C2%B0View-Anti-leak-Technology-Equalization/dp/B07B7GXHJ7/ref=sr_1_1_sspa?s=sporting-goods&ie=UTF8&qid=1522801269&sr=1-1-spons&keywords=respirator+diving+mask&psc=1"),
             Item("MASK", "mask",
-                    "",
-                    ""),
+                    "A high-quality, comfortable scuba diving mask that fits your face well can make the difference between enjoyable dives and a miserable time underwater.\n\nWe recommend Cressi.",
+                    "https://smile.amazon.com/Cressi-PANO-Wide-Scuba-Snorkeling/dp/B00ESYM7TG/ref=zg_bs_3406801_7?_encoding=UTF8&refRID=MEQ8R92PDC1K0KBWER3W"),
+            Item("REGULATOR", "regulator",
+                    "Regulators are an expensive purchase. Modern regulators are very reliable. With proper maintenance, a good set of regulators will last your entire diving career.\n\nWe recommend Mares.",
+                    "https://smile.amazon.com/Mares-Scuba-Regulator-Octo-Package/dp/B0731W1PP5/ref=zg_bs_719946011_9?_encoding=UTF8&refRID=FQRD5QG5VZ1EG24TTSBR"),
             Item("KNIFE", "knife",
-                    "",
-                    "")
+                    "Many divers want a dive knife, and there are many types of diving knives. . From blunt tip knives and sharp tip knives, to titanium or stainless steel.\n\nWe recommend a Zip diving knife.",
+                    "https://smile.amazon.com/Zip-Diving-Knife-Snorkeling-Lightweight/dp/B072YWZP75/ref=zg_bs_3406361_2?_encoding=UTF8&refRID=YG2SC2PS3J62Y7AAVV15")
     )
     val camping = listOf(
             Item("TOOLS", "tools",
