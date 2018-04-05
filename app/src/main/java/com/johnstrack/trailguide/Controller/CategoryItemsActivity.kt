@@ -30,12 +30,19 @@ class CategoryItemsActivity : AppCompatActivity() {
         }
 
         var spanCount = 2
+        var tabletColumns = 0
         val orientation = resources.configuration.orientation
+        val screenWidth = resources.configuration.screenWidthDp
 
         if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
             spanCount = 3
         }
-        val layoutManager = GridLayoutManager (this, spanCount)
+
+        if (screenWidth > 800) {
+            tabletColumns = 1
+        }
+
+        val layoutManager = GridLayoutManager (this, spanCount + tabletColumns)
         itemListView.layoutManager = layoutManager
         itemListView.adapter = adapter
     }
