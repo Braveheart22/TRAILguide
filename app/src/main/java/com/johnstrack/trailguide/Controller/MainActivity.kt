@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         println("Number of categories: ${DataService.categories.count()}")
 
         adapter = CategoryRecycleAdapter(this, DataService.categories) {category ->
-//            println(category.title)
             val itemIntent = Intent (this, CategoryItemsActivity::class.java)
             itemIntent.putExtra(EXTRA_CATEGORY, category.title)
             startActivity(itemIntent)
