@@ -15,5 +15,5 @@
     <string name="item_detail_string_item_image">Item detail @string/item_image</string>
     <string name="sahua_d">Sahua D</string>
     <string name="les_vieux_garcons">Les vieux garçons</string>
-    <string name="category_header">%1$s GEAR</string>
+    <string name="category_header">%s GEAR</string>
 </resources>
