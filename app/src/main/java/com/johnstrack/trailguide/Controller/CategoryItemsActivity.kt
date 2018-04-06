@@ -21,29 +21,28 @@ class CategoryItemsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_category_items)
 
         val categoryType = intent.getStringExtra(EXTRA_CATEGORY)
-        specificItemText.text = "$categoryType GEAR"
+        categoryHeader.text = getString(R.string.category_header, categoryType)
 
         this.adapter = ItemAdapter(this, DataService.getItems(categoryType)) { item ->
-            val itemIntent = Intent (this, DetailActivity::class.java)
+            val itemIntent = Intent(this, DetailActivity::class.java)
             itemIntent.putExtra(EXTRA_ITEM, item)
             startActivity(itemIntent)
         }
+        val spanCount = computeColumnSpan()
 
+        val layoutManager = GridLayoutManager(this, spanCount)
+        itemListView.layoutManager = layoutManager
+        itemListView.adapter = adapter
+    }
+
+    private fun computeColumnSpan(): Int {
         var spanCount = 2
-        var tabletColumns = 0
         val orientation = resources.configuration.orientation
         val screenWidth = resources.configuration.screenWidthDp
 
-        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            spanCount = 3
-        }
+        if (orientation == Configuration.ORIENTATION_LANDSCAPE) spanCount++
+        if (screenWidth > 800) spanCount++
 
-        if (screenWidth > 800) {
-            tabletColumns = 1
-        }
-
-        val layoutManager = GridLayoutManager (this, spanCount + tabletColumns)
-        itemListView.layoutManager = layoutManager
-        itemListView.adapter = adapter
+        return spanCount
     }
 }

@@ -22,7 +22,7 @@ class DetailActivity : AppCompatActivity() {
         val resourceId = context.resources.getIdentifier(item.image, "drawable", context.packageName)
 
         itemDetailImage.setImageResource(resourceId)
-        specificItemText.text = item.title
+        categoryHeader.text = item.title
         itemDetailText.text = item.description
     }
 
