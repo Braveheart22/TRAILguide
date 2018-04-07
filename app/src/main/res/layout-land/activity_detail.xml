@@ -10,7 +10,7 @@
 
     <ImageView
         android:id="@+id/itemDetailImage"
-        android:layout_width="225dp"
+        android:layout_width="250dp"
         android:layout_height="0dp"
         android:background="@android:color/white"
         android:contentDescription="@string/item_detail_string_item_image"

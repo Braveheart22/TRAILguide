@@ -38,11 +38,10 @@ class CategoryItemsActivity : AppCompatActivity() {
     private fun computeColumnSpan(): Int {
         var spanCount = 2
         val orientation = resources.configuration.orientation
-        val screenWidth = resources.configuration.screenWidthDp
+        val layout = resources.configuration.screenLayout and Configuration.SCREENLAYOUT_SIZE_MASK
 
         if (orientation == Configuration.ORIENTATION_LANDSCAPE) spanCount++
-        if (screenWidth > 800) spanCount++
-
+        if (layout == Configuration.SCREENLAYOUT_SIZE_XLARGE) spanCount++
         return spanCount
     }
 }
