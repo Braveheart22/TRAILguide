@@ -19,8 +19,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        println("Number of categories: ${DataService.categories.count()}")
-
         adapter = CategoryRecycleAdapter(this, DataService.categories) {category ->
             val itemIntent = Intent (this, CategoryItemsActivity::class.java)
             itemIntent.putExtra(EXTRA_CATEGORY, category.title)

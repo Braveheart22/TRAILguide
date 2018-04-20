@@ -3,8 +3,8 @@
     <string name="category_background">category background</string>
     <string name="final_project">This app is built as a Final Project for the</string>
     <string name="beginner_track">Devslopes Android Beginner Track</string>
-    <string name="artwork_supplied_by">Artwork supplied By:</string>
-    <string name="vectors_market">Vectors Market</string>
+    <string name="artwork_supplied_by">Artwork supplied By: </string>
+    <string name="vectors_market">Vectors Market \n Anbileru Adaleru \n Andrejs Kirma</string>
     <string name="anbileru_adaleru">Anbileru Adaleru</string>
     <string name="andrejs_kirma">Andrejs Kirma</string>
     <string name="back_to_the_app">Back to the App</string>
